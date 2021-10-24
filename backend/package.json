@@ -1,0 +1,25 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "shashikant kumar",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "babel index.js -d dist",
+		"start": "npm run build && nodemon dist/index.js"
+	},
+	"dependencies": {
+		"apollo-server-express": "^3.4.0",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"graphql": "^15.6.1",
+		"mongoose": "^6.0.12",
+		"nodemon": "^2.0.14"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.15.7",
+		"@babel/core": "^7.15.8",
+		"@babel/preset-env": "^7.15.8"
+	}
+}
